@@ -1,6 +1,6 @@
 # hcl-node-assignment
 
-Programming Assignment for Project Opportunity (Node.js Solution)
+# Programming Assignment for Project Opportunity (Node.js Solution)
 
 1 - Write a Nodejs server that listens on port 3000 and outputs a file content from any local directory
 
@@ -12,7 +12,7 @@ Programming Assignment for Project Opportunity (Node.js Solution)
 
 5.write a restful API(GET) which will call- "https://jsonplaceholder.typicode.com/todos" and output the response of this API.
 
-Quick Start
+# Quick Start
 
 1 - Checkout the project
 
@@ -23,7 +23,7 @@ Quick Start
 4 - npm test (To run test files)
 
 
-API's
+# API's
 
 1 - http://localhost:3000/approute/ (to output a file content from any local directory )
 
@@ -35,7 +35,7 @@ API's
 
 5 - http://localhost:3000/approute/json ( to output response of API that calls URL)
 
-Tools
+# Tools
 
 All api's can be tested using the browser itself.
 
