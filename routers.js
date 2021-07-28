@@ -1,10 +1,10 @@
-var express = require('express');  
-var app=express();
-var router=express.Router();
+let express = require('express');  
+let app=express();
+let router=express.Router();
 const bodyParser = require('body-parser');
 const fs=require('fs');
 const axios = require("axios");
-var path = require('path');
+let path = require('path');
 
 //to use route /file that outputs a file content from any local directory
 
@@ -55,7 +55,7 @@ function nonRepeatingchar(str){
 router.get("/nonrepeatingchars",function(req,res){
     let s=req.query.s;
      if(s)
-    var str1=nonRepeatingchar(s);
+    let str1=nonRepeatingchar(s);
     res.json({
         "FirstNonReapChar":str1
     })
