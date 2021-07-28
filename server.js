@@ -1,7 +1,7 @@
-var express = require('express');  
-var app = express(); 
-var router=express.Router();
-var route=require('./routers');
+let express = require('express');  
+let app = express(); 
+let router=express.Router();
+let route=require('./routers');
 app.set("json spaces", 2)
 
 app.use(express.json());
