@@ -1,9 +1,9 @@
 let express = require('express');  
 let app=express();
 let router=express.Router();
-const bodyParser = require('body-parser');
-const fs=require('fs');
-const axios = require("axios");
+let bodyParser = require('body-parser');
+let fs=require('fs');
+let axios = require("axios");
 let path = require('path');
 
 //to use route /file that outputs a file content from any local directory
@@ -29,7 +29,7 @@ router.get("/product", function (req, res) {
     let num = req.query.num;
     let num2= req.query.num2;
     if(num&&num2){
-    var result= (num*num2);
+    let result= (num*num2);
     }
     else res.json(
       {"error":"provide two values"}
