@@ -9,11 +9,11 @@ var path = require('path');
 //to use route /file that outputs a file content from any local directory
 
 router.get('/', function(req, res){
-  var options = {
+  let options = {
       root: path.join(__dirname)
   };
     
-  var fileName = 'data.txt';
+  let fileName = 'data.txt';
   res.sendFile(fileName, options, function (err) {
       if (err) {
           next(err);
@@ -43,7 +43,7 @@ router.get("/product", function (req, res) {
 // to use route /nonrepeatingchars API for finding the first nonrepeating character in a String
 
 function nonRepeatingchar(str){
-    var result;
+    let result;
     for (let i = 0; i < str.length; i++) {
         if(str.indexOf(str.charAt(i)) == str.lastIndexOf(str.charAt(i))) {
            result= str.charAt(i);
