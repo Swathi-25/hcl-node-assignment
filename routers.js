@@ -54,15 +54,17 @@ function nonRepeatingchar(str){
 }
 router.get("/nonrepeatingchars",function(req,res){
     let s=req.query.s;
-     if(s)
+     if(s){
     let str1=nonRepeatingchar(s);
     res.json({
         "FirstNonReapChar":str1
-    })
+      })
+     }
+     else {
      res.json({
          "Error":"Give the String to continue"
      })
-    
+     }
 })
 
 
